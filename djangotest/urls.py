@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import include,path
 
 urlpatterns = [
+    path('api-auth/', include('rest_framework.urls')),
     path('tasks/',include('tasks.urls')),
     path('year/',include('newyear.urls')),
     path('polls/',include('polls.urls')),
